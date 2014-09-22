@@ -11,6 +11,7 @@ p {
 
 .point-cell {
   fill: none;
+  fill-opacity: 0.5;
   pointer-events: all;
   stroke: #000;
   stroke-opacity: .2;
