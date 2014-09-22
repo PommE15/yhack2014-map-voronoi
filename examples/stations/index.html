@@ -10,7 +10,7 @@
   <div id='map'>
   </div>
   <div id='selections' class="selections">
-    <a href='#' class="show">Choose what supermarkets to display</a>
+    <a href='#' class="show">Choose a transportation type</a>
     <div class='content'>
       <a href='#' class="hide">Hide</a>
       <div id="toggles">
@@ -20,12 +20,12 @@
   <div id='loading'>
   </div>
   <div id='selected'>
-    <h1>Explore supermarkets in the UK</h1>
+    <h1>Explore London with tubes</h1>
   </div>
   <div id='about'>
     <a href='#' class="show">About</a>
     <p class='content'>
-      Explore UK supermarkets using a voronoi diagram. Created by <a href="http://chriszetter.com">Chris Zetter</a>, powered by data from <a href="http://www.superlocate.net/">SuperLocate</a>, maps copyright
+      Explore London with tubes using a voronoi diagram. Reference: <a href="http://chriszetter.com">Chris Zetter</a>, powered by data from <a href="http://www.superlocate.net/">SuperLocate</a>, maps copyright
       <a href='https://www.mapbox.com/about/maps/' target='_blank'>Mapbox and OpenStreetMap</a>.
       <a href='#' class="hide">Hide</a>
     </div>
@@ -34,12 +34,14 @@
   <script src="https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js"></script>
   <script src="/voronoi-maps/lib/voronoi_mapjson.js"></script>
   <script>
-    map = L.mapbox.map('map', 'zetter.i73ka9hn')
-      .fitBounds([[59.355596 , -9.052734], [49.894634 , 3.515625]]);
+    map = L.mapbox.map('map', 'pomme15.jiol14j6')
+      .setView([51.531205, -0.127005], 11);
+      //.fitBounds([[59.355596 , -9.052734], [49.894634 , 3.515625]]);
 
     url = '/voronoi-maps/examples/stations/stations.json';
-    initialSelection = d3.set(['Tesco', 'Sainsburys']);
+    initialSelection = d3.set(['#tubeStyle']);
     voronoiMap(map, url, initialSelection);
   </script>
 </body>
+
 </html>
