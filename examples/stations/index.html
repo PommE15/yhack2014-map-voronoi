@@ -7,6 +7,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <div id='photos'>
+    <img/>
+    <img/>
+    <img/>
+    <img/>
+    <img/>
+  </div>
   <div id='map'>
   </div>
   <div id='selections' class="selections">
@@ -35,7 +42,7 @@
   <script src="/voronoi-maps/lib/voronoi_mapjson.js"></script>
   <script>
     map = L.mapbox.map('map', 'pomme15.jiol14j6')
-      .setView([51.531205, -0.127005], 11);
+      .setView([51.531205, -0.127005], 12);
       //.fitBounds([[59.355596 , -9.052734], [49.894634 , 3.515625]]);
 
     url = '/voronoi-maps/examples/stations/stations.json';
