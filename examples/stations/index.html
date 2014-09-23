@@ -7,15 +7,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <!--div id='photos'>
-    <img/>
-    <img/>
-    <img/>
-  </div-->
+  <div id='logo'>
+    <svg width="512" height="256">
+    <circle cx="148" cy="128" r="64" fill="white" stroke="red" stroke-width="32"></circle>
+    </svg>
+  </div>
+  <ul>
+    <li><h3>Tube Art</h3></li>
+    <li><h3>Voronoi Tree Map</h3></li>
+    <li><h3>Visualization with texts, colors, images</h3></li>
+    <li><h3>Information of food, toilets, and phramacies <br>
+      related to public transportation</h3></li>
+    <li><h3>Data sources from Y!flickr, tfl.gov, and/or others</h3></li>
+  </ul>
   <div id='map'>
   </div>
   <div id='selections' class="selections">
-    <a href='#' class="show">Choose a transportation type</a>
+    <a href='#' class="show">Choose a visualization type</a>
     <div class='content'>
       <a href='#' class="hide">Hide</a>
       <div id="toggles">
@@ -32,8 +40,10 @@
   <div id='about'>
     <a href='#' class="show">About</a>
     <p class='content'>
-      Explore London with tubes using a voronoi diagram. Reference: <a href="http://chriszetter.com">Chris Zetter</a>, powered by data from <a href="http://www.superlocate.net/">SuperLocate</a>, maps copyright
-      <a href='https://www.mapbox.com/about/maps/' target='_blank'>Mapbox and OpenStreetMap</a>.
+      Reference:<br> 
+      - Voronoi diagram (<a href="http://strongriley.github.io/d3/ex/voronoi.html" target="_blank">d3.js</a>, example by <a href="http://chriszetter.com">Chris Zetter</a>)<br>
+      - Maps copyright <a href='https://www.mapbox.com/about/maps/' target='_blank'>Mapbox and OpenStreetMap</a><br/>
+      - Data sources from tfl and flickr
       <a href='#' class="hide">Hide</a>
     </div>
   </div>
