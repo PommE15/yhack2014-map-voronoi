@@ -20,6 +20,8 @@
       <a href='#' class="hide">Hide</a>
       <div id="toggles">
       </div>
+      <div id="togglesMode">
+      </div>
     </div>
   </div>
   <div id='loading'>
@@ -44,7 +46,7 @@
       //.fitBounds([[59.355596 , -9.052734], [49.894634 , 3.515625]]);
 
     url = '/voronoi-maps/examples/stations/stations.json';
-    initialSelection = d3.set(['#tubeStyle']);
+    initialSelection = d3.set(['#tubeStyle', 'color']);
     voronoiMap(map, url, initialSelection);
   </script>
 </body>
